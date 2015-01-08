@@ -1,0 +1,11 @@
+<h2>{{board.timer}}</h2>
+<table class="mines-table">
+    <tr data-ng-repeat="row in board.cells">
+        <td data-ng-repeat="cell in row">
+            <span data-my-cell data-cell="cell"></span>
+        </td>
+    </tr>
+</table>
+<div id="new-game" class="six column">
+    <a href="#/new" class="button three columns">New Game</a>
+</div>

@@ -1,0 +1,16 @@
+<span class="button cell {{ cell.swept ? 'swept' : 'not-swept'}}">
+    <span class="cell-contents flag" data-ng-if="cell.flagged" >
+    </span>
+    <span class="cell-contents mine" data-ng-if="cell.swept && cell.mine">*</span>
+    <span class="cell-contents  mines-{{cell.neighbourMines}}" data-ng-if="cell.swept && !cell.mine">
+        {{cell.neighbourMines ? cell.neighbourMines : ''}}
+    </span>
+    
+</span>
+
+<!--
+<span ng-click="sweep(cell)" ng-right-click="flag(cell)" class="button {{ cell.swept ? 'swept' : 'not-swept'}}">
+    {{ cell.swept ? cell.neighbourMines : ( cell.flagged ? 'F': 'x' )}}
+</span>
+
+-->
