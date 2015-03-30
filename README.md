@@ -10,7 +10,7 @@ Allows single and double click.
 
 ## Missing
 Does not keep track of time
-Pretty sure it builds the board before you click the first time, so it is possible to die the first time :)
+Also it builds the board before you click the first time, so it is possible to die the first time :)
 
 ##Instructions
 You may need to run this on a local web host or it will cry about cross-origin requests when you open index directly from your file system. 
